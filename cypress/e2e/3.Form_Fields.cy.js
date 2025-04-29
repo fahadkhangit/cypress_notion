@@ -1,4 +1,4 @@
-describe('GFM_Web Automation Tests', () =>{
+describe('Web Automation Tests', () =>{
 
   
     it('Form Fields', () => {
