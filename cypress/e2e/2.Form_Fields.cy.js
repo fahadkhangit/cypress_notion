@@ -1,20 +1,11 @@
-describe('GFM_Web Automation Tests', () => {
+describe('GFM_Web Automation Tests', () =>{
+
   
-    beforeEach(() => {
-      cy.visit('https://english1.mubasher.info/login');
-      cy.viewport('macbook-15'); // maximize like Selenium's window maximize
-    });
-  
-    it.skip('should open Home Page', () => {
-      // Homepage opened successfully.
-      // Add validations if needed
-    });
-  
-    it.skip('should verify Title', () => {
-      cy.title().should('eq', 'Community Mubasher');
-    });
-  
-    it.skip('Form Fields', () => {
+    it('Form Fields', () => {
+
+        cy.visit('https://practice-automation.com/');
+        cy.viewport('macbook-15'); // maximize
+
       cy.contains('Form Fields').click();
       cy.get('#name-input').type('testt@gmail.com');
       cy.get('input[type="password"]').type('123456');

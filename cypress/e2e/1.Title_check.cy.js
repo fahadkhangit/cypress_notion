@@ -5,13 +5,13 @@ describe('Practice Automation Tests', () => {
       cy.viewport('macbook-15');
     });
   
-    it.skip('should open Home Page', () => {
+    it('should open Home Page', () => {
       // Homepage opened successfully.
       // Add. validations if needed
     });
 
 
-    it.skip('verify Title', () => {
+    it('verify Title', () => {
         cy.title().should('eq', 'Learn and Practice Automation | automateNow');
       });
 
